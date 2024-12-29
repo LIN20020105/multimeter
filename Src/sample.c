@@ -71,7 +71,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			}
 		}
 			adc_index ++;
-			if (adc_index == (10 * ADC_BUFFER_SIZE + 1) ) {
+			if (adc_index == (100 * ADC_BUFFER_SIZE + 1) ) {
 			adc_index  = 0;
 			send_flag = 1;
 			}
